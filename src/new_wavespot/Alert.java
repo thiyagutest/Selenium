@@ -11,7 +11,7 @@ public class Alert {
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "D://SeleniumDrivers//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-driver.get("http://pcc.wavespot.net:8080/users/sign_in");
+		driver.get("http://pcc.wavespot.net:8080/users/sign_in");
 		
 		WebElement username = driver.findElement(By.xpath("//*[@id='user_email']"));
 		username.sendKeys("thiyagarajan@prontonetworks.net");
